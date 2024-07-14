@@ -1,0 +1,9 @@
+local proximityPrompts = game:GetService("Workspace"):GetDescendants()
+
+for _, object in ipairs(proximityPrompts) do
+    if object:IsA("ProximityPrompt") then
+        object.HoldDuration = 0
+        print("hold dur set to 0 for", object.Name)
+    end
+end
+
